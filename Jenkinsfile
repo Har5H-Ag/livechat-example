@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('checkout') {
+      steps {
+        git(url: 'https://github.com/Har5H-Ag/livechat-example', branch: 'main')
+      }
+    }
+
   }
 }
